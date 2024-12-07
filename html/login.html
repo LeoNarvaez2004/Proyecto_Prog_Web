@@ -10,18 +10,28 @@
 <body>
     <nav class="navBar">
         <img src="/Proyecto_Prog_Web/images/logoDef.png" class="logo">
-        <form action="index.html" class="inicioSesion">
-            <div class="email">
-                <div class="font">Email o Teléfono</div>
-                <input type="text" name="" required>
+            <div class="menu">
+                <a href="index.html">Inicio</a> 
+                <a href="index.html">Productos</a> 
+                <a href="index.html">Contacto</a>
             </div>
-            <div class="password">
-                <div class="font">Contraseña</div>
-                <input type="password" name="" id="" required>
+            <div class="inicioSesionContainer">
+                <div class="elemento">
+                    <form action="index.html" class="inicioSesion">
+                        <div class="email">
+                            <div class="font">Email o Teléfono</div>
+                            <input type="text" name="" required>
+                        </div>
+                        <div class="password">
+                            <div class="font">Contraseña</div>
+                            <input type="password" name="" id="" required>
+                        </div>
+                        <button class="login">Iniciar Sesión</button>
+                    </form>
+                </div>
             </div>
-            <button class="login">Iniciar Sesión</button>
-        </form>
     </nav>
+    
     <section>
         <div class="logoCuerpo">
             <img src="/Proyecto_Prog_Web/images/logoTemp.png" class="logoCuerpo">
@@ -76,6 +86,14 @@
             </form>
         </div>
     </section>
-    <footer>Marca 100%</footer>
+    <footer>
+        <nav class="footer-nav">
+            <a href="contacto.html">Contacto</a>
+            <a href="acerca.html">Quienes somos</a>
+        </nav>
+        <label>
+            <input type="checkbox" class="dark-mode-toggle">
+        </label>
+    </footer>
 </body>
 </html>
