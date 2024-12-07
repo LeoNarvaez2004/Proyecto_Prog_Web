@@ -127,16 +127,21 @@ section{
 .registrarse .crearCuentaForm .fechaComp{
     margin-top: 5px;
 }
+.registrarse .crearCuentaForm .mes{
+    width:50px;
+    height:28px;
+    border-radius: 5px;
+}
 
-.registrarse .crearCuentaForm .mes,
 .registrarse .crearCuentaForm .dia,
 .registrarse .crearCuentaForm .anio{
+    border-radius: 5px;
     height:28px;
 }
 
 .registrarse .crearCuentaForm .dia,
 .registrarse .crearCuentaForm .anio{
-    margin-left: -5px;
+    margin-left: 0px;
 }
 
 .registrarse .crearCuentaForm a{
