@@ -17,7 +17,7 @@
 }
 .inicioSesion{
     display: flex;
-    position: relative;
+    position: absolute;
     font-family: "Lucida Handwriting", cursive;
     left: 58%;
     top:10px;
@@ -69,6 +69,7 @@ section{
 .logoCuerpo{
     position: relative;
     height:350px;
+    width:300px;
     left:8%;
     top:10%;
 }
@@ -77,6 +78,7 @@ section{
     font-family: Arial;
     font-size: 25px;
     margin-left: 30px;
+    width:300px;
     top:20%;
     left: 10%;
 
@@ -125,6 +127,7 @@ section{
     color: grey;
 }
 .registrarse .crearCuentaForm .fechaComp{
+    position:relative;
     margin-top: 5px;
 }
 .registrarse .crearCuentaForm .mes{
@@ -169,9 +172,11 @@ section{
     margin-left: 120px;
 }
 .registrarse .crearCuentaForm .tyc{
+    position: relative;
+
     margin-top: 15px;
     font-size: 12px;
-    width: 720px;
+    width: 450px;
     color: grey;
 }
 .registrarse .crearCuentaForm .registrate{
@@ -189,4 +194,10 @@ section{
 }
 .registrarse .crearCuentaForm .registrate:hover{
     background: linear-gradient(#74b85e, #598B45);
+}
+footer{
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(#CC6699,#CC0099);
+    height:105px;
 }
