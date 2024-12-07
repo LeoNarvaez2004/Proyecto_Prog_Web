@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navBar{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(#CC6699,#CC0099);
+    border-bottom: 1PX solid #6600FF;
+}
+.logo{
+    position: absolute;
+    height: 100px;
+    width:400px;
+    left:13%;
+    padding-top:0%;
+}
+.inicioSesion{
+    display: flex;
+    position: relative;
+    font-family: "Lucida Handwriting", cursive;
+    left: 58%;
+    top:10px;
+}
+.inicioSesion .email,
+.inicioSesion .password{
+    padding-left: 10px;
+}
+.inicioSesion .email .font
+.inicioSesion .password .font{
+    font-size: 10px;
+    padding-bottom: 4px;
+    color: black;
+}
+
+.inicioSesion .email input,
+.inicioSesion .password input{
+    height: 23px;
+    width: 150px;
+    padding-left: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.login{
+    height: 24px;
+    width: 100px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background: #CC0099;
+    border: 1px solid #6600FF;
+}
+
+.login:hover{
+    background: #CC6699;
+}
+section{
+    height: 614px;
+    width:100%;
+    top:900px;
+    background: linear-gradient(#FDFDFE,#EDD1F6,#E3E6F0,#D6DBEA);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.logoCuerpo{
+    position: relative;
+    height:350px;
+    left:8%;
+    top:10%;
+}
+.logoCuerpo .fuenteCuerpo{
+    position: relative;
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 30px;
+    top:20%;
+    left: 10%;
+
+}
+.logoCuerpo .fuente1{
+    color:#993366;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.registrarse{
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    left: 57%;
+}
+.registrarse .crearCuenta{
+    font-size: 40px;
+    margin: 25px 0;
+    margin-top: -280px;
+}
+.registrarse .promover{
+    margin:-20px 5px;
+    font-size: 18px;
+}
+.registrarse .crearCuentaForm input{
+    margin-top: 50px;
+    height: 38px;
+    width: 190px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.registrarse .crearCuentaForm .apellido{
+    margin-left: 15px;
+}
+.registrarse .crearCuentaForm .email,
+.registrarse .crearCuentaForm .password,
+.registrarse .crearCuentaForm .password1{
+    margin-top: 20px;
+    width: 410px;
+}
+.registrarse .crearCuentaForm .fechaN{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+.registrarse .crearCuentaForm .fechaComp{
+    margin-top: 5px;
+}
+
+.registrarse .crearCuentaForm .mes,
+.registrarse .crearCuentaForm .dia,
+.registrarse .crearCuentaForm .anio{
+    height:28px;
+}
+
+.registrarse .crearCuentaForm .dia,
+.registrarse .crearCuentaForm .anio{
+    margin-left: -5px;
+}
+
+.registrarse .crearCuentaForm a{
+    text-decoration: none;
+}
+.registrarse .crearCuentaForm a:hover{
+    text-decoration: underline;
+}
+.registrarse .crearCuentaForm input[type="radio"]{
+    height: 15px;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+.registrarse .crearCuentaForm input[value=masculino]{
+    margin-left: -80px;
+}
+.registrarse .crearCuentaForm input[value=femenino]{
+    margin-left: -100px;
+}
+.registrarse .crearCuentaForm .font{
+    margin-left: 25px;
+    margin-top: -19px;
+}
+.registrarse .crearCuentaForm .font2{
+    margin-left: 120px;
+}
+.registrarse .crearCuentaForm .tyc{
+    margin-top: 15px;
+    font-size: 12px;
+    width: 720px;
+    color: grey;
+}
+.registrarse .crearCuentaForm .registrate{
+    margin-top: 20px;
+    height: 38px;
+    width: 170px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #006117;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(#6fad5a, #66a150, #60974C);
+}
+.registrarse .crearCuentaForm .registrate:hover{
+    background: linear-gradient(#74b85e, #598B45);
+}
