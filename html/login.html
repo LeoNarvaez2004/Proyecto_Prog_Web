@@ -19,8 +19,8 @@
                 <div class="elemento">
                     <form action="index.html" class="inicioSesion">
                         <div class="email">
-                            <div class="font">Email o Teléfono</div>
-                            <input type="text" name="" required>
+                            <div class="font">Email</div>
+                            <input type="email" name="" required>
                         </div>
                         <div class="password">
                             <div class="font">Contraseña</div>
@@ -34,7 +34,7 @@
     
     <section>
         <div class="logoCuerpo">
-            <img src="/Proyecto_Prog_Web/images/logoTemp.png" class="logoCuerpo">
+            <img src="/Proyecto_Prog_Web/images/logo.png" class="imgLogo">
             <p class="fuenteCuerpo fuente1">Gracias por elegirnos!</p>
             <p class="fuenteCuerpo">Esperamos volver a verte!</p>
         </div>
@@ -43,42 +43,95 @@
             <p class="promover">Es gratis y siempre lo será.</p>
             <form class="crearCuentaForm" action="index.html">
                 <div>
-                    <input type="text" name="" class="primerNombre" placeholder="Primer Nombre">
+                    <input type="text" name="" class="primerNombre" placeholder="Primer Nombre" required>
                     <input type="text" name="" class="apellido" placeholder="Apellido">
-                    <input type="text" name="" class="email" placeholder="Tu Email o número de teléfono">
-                    <input type="password" name="" class="password" placeholder="Nueva Contraseña">
-                    <input type="password" name="" class="password1" placeholder="Confirmar Contraseña">
+                    <input type="email" name="" class="email" placeholder="Tu Email" required>
+                    <input type="password" name="" class="password" placeholder="Nueva Contraseña" required>
+                    <input type="password" name="" class="password1" placeholder="Confirmar Contraseña" required>
                 </div>
                 <p class="fechaN">Fecha de Nacimiento</p>
                 <div class="fechaComp">
-                    <select class="mes">
-                        <option>Mes</option><option>Enero</option><option>Febrero</option><option>Marzo</option>
-                        <option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option>
-                        <option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option>
-                        <option>Diciembre</option>
+                    <select class="anio" required>
+                        <option value="">Año</option>
+                        <option value="1970">1970</option>
+                        <option value="1972">1972</option>
+                        <option value="1974">1974</option>
+                        <option value="1976">1976</option>
+                        <option value="1978">1978</option>
+                        <option value="1980">1980</option>
+                        <option value="1982">1982</option>
+                        <option value="1984">1984</option>
+                        <option value="1986">1986</option>
+                        <option value="1988">1988</option>
+                        <option value="1990">1990</option>
+                        <option value="1992">1992</option>
+                        <option value="1995">1995</option>
+                        <option value="1997">1997</option>
+                        <option value="2000">2000</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
                     </select>
-                    <select class="dia">
-                        <option>Día</option><option>1</option><option>2</option><option>3</option>
-                        <option>4</option><option>5</option><option>6</option><option>7</option>
-                        <option>8</option><option>9</option><option>10</option><option>11</option>
-                        <option>12</option><option>13</option><option>14</option><option>15</option>
-                        <option>16</option><option>17</option><option>18</option><option>19</option>
-                        <option>20</option><option>21</option><option>22</option><option>23</option>
-                        <option>24</option><option>25</option><option>26</option><option>27</option>
-                        <option>28</option><option>29</option><option>30</option>
+                    <select class="dia" required>
+                        <option value="">Día</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
                     </select>
-                    <select class="anio">
-                        <option>Año</option><option>1970</option><option>1972</option><option>1974</option>
-                        <option>1976</option><option>1978</option><option>1980</option><option>1982</option>
-                        <option>1984</option><option>1986</option><option>1988</option><option>1990</option>
-                        <option>1992</option><option>1995</option><option>1997</option><option>2000</option>
-                        <option>2002</option><option>2003</option><option>2004</option><option>2005</option>
-                        <option>2006</option><option>2007</option><option>2008</option><option>2009</option>
-                        <option>2010</option><option>2011</option><option>2012</option><option>2013</option>
+                    <select class="mes" required>
+                        <option value="">Mes</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
                     </select>
                 </div>
-                <input type="radio" name="genero" value="masculino">
-                <input type="radio" name="genero" value="femenino">
+                <input type="radio" name="genero" value="masculino" required>
+                <input type="radio" name="genero" value="femenino" required>
                 <p class="font">Masculino</p>
                 <p class="font font2">Femenino</p>
                 <p class="tyc">Al hacer clic en Registrarse, acepta nuestras <a href="politicas.html" target="_blank">Condiciones, Política de datos y Política de cookies.</a> Es posible que reciba notificaciones por SMS de nuestra parte y puede darse de baja en cualquier momento.</p>
@@ -90,6 +143,7 @@
         <nav class="footer-nav">
             <a href="contacto.html">Contacto</a>
             <a href="acerca.html">Quienes somos</a>
+            <a href="">Historia</a>
         </nav>
         <label>
             <input type="checkbox" class="dark-mode-toggle">
