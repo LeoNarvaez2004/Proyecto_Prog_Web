@@ -118,3 +118,80 @@ aside.menu {
 .fuente{
     font-size: small;
 }
+footer {
+    display: flex;
+    width:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-top: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+}
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+.footer-nav a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+.dark-mode-toggle {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.dark-mode-toggle:checked {
+    background-color: #333;
+    border-color: #ffffff;
+}
+.dark-mode-toggle::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.dark-mode-toggle:checked::before {
+    transform: translateX(30px);
+    background-color: #ffffff;
+}
+body:has(.dark-mode-toggle:checked) .navBar {
+    background: linear-gradient(#444, #222);
+    border-bottom: 1px solid #ffffff;
+}
+body:has(.dark-mode-toggle:checked) .contenidoPrincipal {
+    background: linear-gradient(#444, #222);
+    border-bottom: 1px solid #ffffff;
+    color: #ccc;
+}
+body:has(.dark-mode-toggle:checked) .contenedor .menu {
+    background: linear-gradient(#444, #222);
+    border-bottom: 1px solid #ffffff;
+    color: #ccc;
+}
+
+body:has(.dark-mode-toggle:checked) {
+    background-color: #333333;
+    color: #ffffff;
+}
+body:has(.dark-mode-toggle:checked) footer{
+    background-color: #333333;
+    color: #ffffff;
+}
