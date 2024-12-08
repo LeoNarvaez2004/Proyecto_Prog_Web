@@ -142,5 +142,35 @@ footer {
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+.dark-mode-toggle {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.dark-mode-toggle:checked {
+    background-color: #333;
+    border-color: #ffffff;
+}
+.dark-mode-toggle::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.dark-mode-toggle:checked::before {
+    transform: translateX(30px);
+    background-color: #ffffff;
+}
 

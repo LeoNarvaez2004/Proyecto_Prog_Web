@@ -260,6 +260,7 @@ footer {
     gap: 20px;
 }
 .footer-nav a {
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: inherit;
 }
