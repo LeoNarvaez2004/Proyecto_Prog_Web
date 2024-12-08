@@ -95,7 +95,7 @@ section {
     height: 340px;
     width: 300px;
     left: 8%;
-    top: 10%;
+    top: -50px;
 }
 .logoCuerpo .fuenteCuerpo {
     position: relative;
@@ -122,6 +122,7 @@ section {
 }
 .registrarse {
     font-family: 'Lobster', cursive;
+    top:55%;
     position: absolute;
     left: 57%;
 }
