@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    font-family: monospace;
+}
+
+body{
+    background-color: #282832;
+}
+
+.first-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-section-info{
+    margin-left: 5%;
+    width: 60%;
+    color: wheat;
+    margin-bottom: 5%;
+}
+
+.first-section-image{
+    margin-left: 20%;
+    transform: translate(0, -20%);
+}
+
+.title{
+    font-size: 500%;
+}
+
+.title-description{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.proyects{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    overflow: hidden;
+}
+
+.proyects:hover .my-work-title-container{
+    filter: opacity(0);
+    transform: translate(-50%, 100%);
+    transition: filter 0.5s ease, transform 1s ease;
+}
+
+.my-work-title-container{
+    width: 103%;
+    height: 103%;
+    font-size: 300%;
+    color: white;
+    background-color: rgb(40, 40, 50, 80%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: filter 0.5s ease;
+    z-index: 1;
+}
+
+.my-work-title{
+    font-size: 200%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.proyect{
+    background-color: #282832;
+    height: 500px;
+    width: 400px;
+    margin-top: 10%;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 2%;
+    color: white;
+}
+
+.img-proyect{
+    transition: transform 0.3s ease;
+}
+
+.img-proyect:hover{
+    transform: scale(130%);
+    transition: transform 0.3s ease;
+}
+
+.img-proyect-container{
+    border-radius: 20px;
+    mask-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(207,207,207,0.3) 70%, rgba(0,0,0,0) 100%);
+    overflow: hidden;
+}
+
+.proyect-title{
+    margin-top: 30px;
+}
+
+.proyect-description{
+    margin-top: 10%;
+}
+
+@keyframes opacity-animation{
+    0%{
+       filter: opacity(100%);
+       display: block; 
+    }
+    99%{
+        filter: opacity(1%);
+        display: block;
+    }
+    100%{
+        filter: opacity(0);
+        display: none;
+    }
+}
