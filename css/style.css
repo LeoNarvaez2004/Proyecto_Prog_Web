@@ -2,7 +2,7 @@
 
 :root {
 	--primary-color: #c77ac0;
-	--background-gradient: linear-gradient(#FDFDFE, #EDD1F6, #E3E6F0, #D6DBEA);
+	--background-gradient: linear-gradient(#cacadb, #EDD1F6, #E3E6F0, #D6DBEA);
 	--dark-color: #151515;
 }
 
@@ -185,7 +185,7 @@ html {
 }
 
 .banner {
-	background-image: url("/Proyecto_Prog_Web/imgTienda/nike.jpeg");
+	background-image: url("../imgTienda/nike.jpeg");
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
@@ -372,7 +372,6 @@ html {
 .content-card-product .price {
 	justify-self: end;
 	align-self: center;
-
 	font-size: 1.7rem;
 	font-weight: 600;
 }
@@ -477,6 +476,7 @@ html {
 
 .footer {
 	background-color: var(--primary-color);
+	position: relative;
 }
 
 .container-footer {
@@ -641,4 +641,50 @@ html {
 	font-size: 1.6rem;
 }
 
-
+.dark-mode-toggle {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #ffffff;
+    position: relative;
+	
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.dark-mode-toggle:checked {
+    background-color: #333;
+    border-color: #ffffff;
+}
+.dark-mode-toggle::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.dark-mode-toggle:checked::before {
+    transform: translateX(30px);
+    background-color: #ffffff;
+}
+body:has(.dark-mode-toggle:checked) .container-hero {
+    background: linear-gradient(#444, #222);
+    border-bottom: 1px solid #ffffff;
+}
+body:has(.dark-mode-toggle:checked) .container-navbar {
+    background: linear-gradient(#444, #222);
+    border-bottom: 1px solid #ffffff;
+}
+body:has(.dark-mode-toggle:checked) .main-content{
+    background: linear-gradient(#222, #333, #444, #555);
+    color: white;
+}
+body:has(.dark-mode-toggle:checked) .content-card-product{
+    color: black;
+}
