@@ -125,3 +125,11 @@ body{
         display: none;
     }
 }
+
+.proyect-icons{
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+}
