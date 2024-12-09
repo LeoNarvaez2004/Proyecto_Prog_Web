@@ -305,6 +305,50 @@ html {
 }
 
 
+.servicioC {
+    width: 170px;
+    height: 200px;
+    background-color: rgb(238, 161, 201);
+    text-align: center;
+    padding: 12px;
+    bottom: 0;
+    left: 20px;
+    border-radius: 20px;
+    margin: 0%;
+    flex-wrap: 2;
+	float: inline-end;
+}
+
+.servicioC button {
+    width: 90%;
+}
+
+
+.servicioC textarea {
+    width: 90%;
+    height: 60px;
+    margin: 10px;
+    resize: none;
+}
+
+.servicioC textarea::placeholder {
+    text-align: center;
+}
+
+.scTitle {
+    background-color: #944fba9a;
+    border-radius: 7px;
+    
+}
+
+.scTitle p {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.contacto{
+    
+}
 
 .card-product:hover .button-group {
 	z-index: 0;
