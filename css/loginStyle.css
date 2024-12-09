@@ -19,7 +19,7 @@ body {
     font-family: 'Lobster', cursive;
     text-align: center;
     position: absolute;
-    bottom: 87%;
+    bottom: 86%;
     width: 100%;
 }
 .menu a {
@@ -37,7 +37,7 @@ body {
 .logo {
     position: absolute;
     height: 120px;
-    width: 44%;
+    width: 40%;
     left: 0%;
     padding: 0px;
 }
@@ -45,7 +45,7 @@ body {
     display: flex;
     position: absolute;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
-    left: 70%;
+    left: 60%;
     top: 10px;
 }
 .inicioSesion .email,
@@ -109,7 +109,7 @@ section {
     left: 10%;
 }
 .imgLogo{
-    width: 130%;
+    width: 110%;
     height: 100%;
     padding: 50%;
     margin-left: -50%;
