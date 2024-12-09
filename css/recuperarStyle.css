@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('/Proyecto_Prog_Web/images/fondo.png');
+    background-image: url('../images/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -171,6 +171,5 @@ footer {
 }
 .dark-mode-toggle:checked::before {
     transform: translateX(30px);
-    background-color: #ffffff;
+    background-color: #ffffff;
 }
-
