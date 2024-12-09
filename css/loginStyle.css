@@ -43,7 +43,7 @@ body {
 .inicioSesion {
     display: flex;
     position: absolute;
-    font-family: "Lucida Handwriting", cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
     left: 70%;
     top: 10px;
 }
